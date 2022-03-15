@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "train model",
+            "type": "python",
+            "request": "launch",
+            "program": "/home/nwang/Transferability_Black-Box_Attacks/demos-lifelong-transfer/demos-cnn/pytorch/main_pytorch.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH" : "/home/nwang/Transferability_Black-Box_Attacks/demos-lifelong-transfer/demos-cnn/utils"
+            },
+            "args": [
+                "train",
+                "--dataset_dir=/home/nwang/emotion/dataset/DEMOS",
+                "--workspace=/home/nwang/Transferability_Black-Box_Attacks/demos-lifelong-transfer",
+                "--subdir=demos_data",
+                "--cuda"
+            ]
+        }
+    ]
+}
